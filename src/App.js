@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './gatito.jpg';
 import './App.css';
 
 function App() {
@@ -8,15 +8,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hi there <b>motherfuckers!!!!</b> you rock!!!
+          HOLA ELISABELITA <b>CASTORCILLA</b>, VAMOS A POR UNA BIRRITA GUAPI!!!
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.paragatitos.com/wp-content/uploads/beb%C3%A9-gatito-768x402.jpg"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Gatitos!
         </a>
       </header>
     </div>
