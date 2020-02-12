@@ -7,4 +7,16 @@ before_install:
   - docker build -t jgddocker/docker-react -f Dockerfile.dev .
 script:
   - docker run -e CI=true jgddocker/docker-react npm run test
-  #  - docker run USERNAME/docker-react npm run test -- --coverage
+deploy:
+  edge: true
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "docker"
+  env: "Docker-env"
+  bucket_name: "elasticbeanstalk-us-east-1-976616965054"
+  bucket_path: "docker"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
